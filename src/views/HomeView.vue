@@ -50,7 +50,7 @@ const selectPokemon = async (pokemon) => {
         </div>
 
         <div class="col-sm-12 col-md-6">
-          <div class="card">
+          <div class="card card-list">
             <div class="card-body row">
               <div class="mb-3">
                 <label hidden for="searchPokemonField">Pesquisar...</label>
@@ -77,3 +77,11 @@ const selectPokemon = async (pokemon) => {
     </div>
   </main>
 </template>
+
+<style scoped>
+.card-list {
+  max-height: 450px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+</style>
